@@ -41,6 +41,7 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	z-index: 1;
 }
 
 
@@ -56,6 +57,7 @@ nav {
 	gap: 10px;
 	font-weight: 900;
 	font-size: 0.875rem;
+	z-index: 1;
 }
 
 nav ul {
@@ -191,19 +193,78 @@ textarea {
 	gap: 20px;
 }                        
  
+.order-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: url('./assets/valley.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: -2;
+}
+
+.cover2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0,0,0,0.6);
+	z-index: -1;
+}
+
+table{
+	border: 1px solid white;
+	border-collapse: collapse;
+	max-width: 80vw;
+	margin: 2% auto;
+	padding: 5px;
+	background: blur(2px);
+}
+
+td{
+	border: 1px solid white;
+	max-width: 80vw;
+	margin: 0 auto;
+	padding: 2px;
+	background: blur(2px)
+}
 
 
 
+th{
+	border: 1px solid white;
+	max-width: 80vw;
+	margin: 0 auto;
+	font-weight: 900;
+	font-size: 2rem;
+	padding: 2px;
+	background: blur(2px)
+}
 
+td{
+	border: 1px solid white;
+	max-width: 80vw;
+	margin: 0 auto;
+	padding: 2px;
+	text-align: center;
+}
 
+td input {
+	border: none;
+}
 
-
-
-
-
-
-
-
+.button2 {
+	display: flex;
+	flex-direction: row;
+	width: 30%;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	gap: 20px;
+}
 
 
 
